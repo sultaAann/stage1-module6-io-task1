@@ -1,12 +1,11 @@
 package com.epam.mjc.io;
 
 import java.io.*;
-import java.util.Arrays;
 
 
 public class FileReader {
 
-    public Profile getDataFromFile(File file){
+    public Profile getDataFromFile(File file) {
         String[] res = new String[4];
         try (java.io.FileReader fileReader = new java.io.FileReader(file); BufferedReader rd = new BufferedReader(fileReader)) {
             int i = 0;
